@@ -122,6 +122,10 @@ body {
   width: 75%;
   margin: 0 4vw;
   margin-bottom: 1.5rem;
+
+  @media only screen and (max-width: 975px) {
+    width: 0;
+  }
 }
 
 .opt {
