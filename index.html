@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Quizzy</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="screen-1">
+        <header class="s1-header">
+          <h1 class="app-name">Quizzy</h1>
+        </header>
+        <main class="s1-main">
+          <form action="#" class="quiz-form">
+            <label for="no_ques">Enter No. of Questions</label>
+            <input
+              class="no-of-que"
+              type="number"
+              placeholder="eg. 10"
+              name="amount"
+              required
+            />
+
+            <label for="quiz-cate">Select Catageory of Questions</label>
+            <select name="category" id="quiz-cate" class="category">
+              <option value=" ">Any Catageory</option>
+              <option value="9">General Knowledge</option>
+              <option value="10">Entertainment: Books</option>
+              <option value="11">Entertainment: Film</option>
+              <option value="12">Entertainment: Music</option>
+              <option value="13">Entertainment: Musicals & Theatres</option>
+              <option value="14">Entertainment: Television</option>
+              <option value="15">Entertainment: Video Games</option>
+              <option value="16">Entertainment: Board Games</option>
+              <option value="17">Science & Nature</option>
+              <option value="18">Science: Computers</option>
+              <option value="19">Science: Mathematics</option>
+              <option value="20">Mythology</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="25">Art</option>
+              <option value="26">Celebrities</option>
+              <option value="27">Animals</option>
+              <option value="28">Vehicles</option>
+              <option value="29">Entertainment: Comics</option>
+              <option value="30">Science: Gadgets</option>
+              <option value="31">Entertainment: Japanese Anime & Manga</option>
+              <option value="32">Entertainment: Cartoon & Animations</option>
+            </select>
+
+            <label for="type">Select Type of Questions</label>
+            <select name="type" id="type" class="type">
+              <option value=" ">Any Type</option>
+              <option value="multiple">Multiple Choice</option>
+              <option value="boolean">True / False</option>
+            </select>
+
+            <label for="difficulty">Select Difficulty Level of Questions</label>
+            <select name="difficulty" id="diff" class="diff">
+              <option value=" ">Any Difficulty</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+
+            <button class="btn-submit" type="submit">Start Quiz</button>
+          </form>
+        </main>
+      </section>
+      <section class="screen-2 hidden">
+        <header class="s2-header">
+          <p class="score">Score: 10</p>
+        </header>
+        <main class="s2-main">
+          <div class="ques-no">
+            <p class="que-no">Question No. : 1 / 10</p>
+          </div>
+          <div class="ques">
+            <p class="question">Question here</p>
+          </div>
+          <div class="options">
+            <button class="opt opt-1">Option 1</button>
+            <button class="opt opt-2">Option 2</button>
+            <button class="opt opt-3">Option 3</button>
+            <button class="opt opt-4">Option 4</button>
+          </div>
+          <div class="answer">
+            <div>Correct answer =</div>
+            <div class="correct-answer">answer</div>
+          </div>
+        </main>
+        <footer class="s2-footer">
+          <button type="submit" class="btn-quit btn-footer">Quit Quiz</button>
+          <button class="btn-next btn-footer">Next Question</button>
+        </footer>
+      </section>
+      <section class="screen-3 hidden">
+        <div class="total-score">
+          <p class="ts-text">TOTAL SCORE</p>
+          <p class="ts-score">10 / 10</p>
+        </div>
+        <div class="new-quiz">
+          <button class="btn-new-quiz">New Quiz</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
